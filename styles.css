@@ -1,0 +1,212 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    width: 100px;
+}
+
+#wrapper-hero{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+
+    background-image: url("images/torshov.jpg");
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    /* background-size: 100% 100%;
+    background-repeat: contain,cover;
+    background-repeat: no-repeat; */
+    margin: 0;
+}
+
+#wrapper-hero h1{
+    background-color: #1D3557;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+#wrapper-hero h2{
+    background-color: #457B9D;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 10px;
+    width: 40vw;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#wrapper-activities{
+    background-color: #F1FAEE;
+    margin: 0;
+    color: #1D3557;
+    /* height: 450px; */
+}
+
+#wrapper-activities h3 {
+    padding: 30px 0;
+    color: inherit;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#activities{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    box-sizing: border-box;
+    
+}
+
+#activities div{
+    align-items: center;
+    /* width: 50vw; */
+}
+
+#activities img{
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#activities h4, p{
+    margin: 20px 25px;
+
+}
+
+#activities  p{
+    font-size: 14px;
+    margin-top: 20px;
+    
+}
+
+@media only screen and (max-width: 600px) {
+
+    #activities{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:stretch;
+        box-sizing: border-box;
+
+    }
+
+    #activities img{
+        margin-bottom: 10px;
+    }
+
+    #activities div{
+        border-bottom: 1px solid;
+        margin: 2px;
+        /* border-radius: 10px; */
+        border-color: #A8DADC;
+        border-width: thin;
+    }
+}
+
+
+#wrapper-guide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 10px;
+}
+.tour-guide{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row-reverse;
+    padding: 20px;
+    background-color: #A8DADC;
+    width: 40vw;
+
+    border-radius: 10px;
+    box-shadow: 0px 5px 1px #1D3557;
+    color:  #1D3557;
+    font-size: 14px;
+    /* gap: 10px; */
+
+}
+
+.tour-guide h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+
+
+.tour-guide-img {
+    width: inherit;
+    height: 200px;
+    align-items: stretch;
+    background-size: cover;
+    background-position: top;
+    background-image: url("images/per.jpg");
+    
+    border-radius: 10px;
+}
+
+.tour-guide-content{
+    /* align-content: flex-start; */
+    /* align-content: flex-start; */
+}
+
+.tour-guide-content h4 {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .tour-guide{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        flex-direction: column-reverse;
+        padding: 0;
+        margin: 0;
+
+    }
+    .tour-guide-img {
+
+        height: 150px;
+        background-size: cover;
+        background-position: top;
+        background-image: url("images/per.jpg");
+        border-radius: 10px;
+    }
+    .tour-guide-content h4 {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .tour-guide-img {
+
+        height: 15vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
+}
